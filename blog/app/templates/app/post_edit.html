@@ -1,0 +1,11 @@
+<!-- app/templates/app/post_edit.html -->
+{% extends 'app/base.html' %}
+{% block title %}New Post{% endblock %}
+{% block content %}
+<h2>New Post</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="button" type="submit">Save</button>
+</form>
+{% endblock %}
