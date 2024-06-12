@@ -1,0 +1,8 @@
+<!-- app/templates/app/post_detail.html -->
+{% extends 'app/base.html' %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+<h2>{{ post.title }}</h2>
+<p>by {{ post.author }} on {{ post.created_at }}</p>
+<div>{{ post.content }}</div>
+{% endblock %}
